@@ -14,7 +14,7 @@ $("#update_user").submit(function(event){
 
 
     var request = {
-        "url" : `https://0.0.0.0/api/users/${data.id}`,
+        "url" : `http://localhost:3000/api/users/${data.id}`,
         "method" : "PUT",
         "data" : data
     }
@@ -31,7 +31,7 @@ if(window.location.pathname == "/"){
         var id = $(this).attr("data-id")
 
         var request = {
-            "url" : `https://0.0.0.0/api/users/${id}`,
+            "url" : `http://localhost:3000/api/users/${id}`,
             "method" : "DELETE"
         }
 
